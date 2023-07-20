@@ -11,27 +11,55 @@
 <body>
 	<!-- https://jeel105512.github.io/json-lesson-01/ -->
 	<!-- STEP 1: Build out a HEADER and a SECTION element -->
-	<h1>Hello World</h1>
-	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam cupiditate praesentium sed quas perspiciatis suscipit, explicabo itaque corrupti incidunt iusto quibusdam rerum at dolorem unde nisi laboriosam beatae ea. Illum.</p>
+	<header>
+
+	</header>
+	<section>
+
+	</section>
 	<script>
 		/* STEP 2: Bind the HEADER and the SECTION elements above to variables */
+		const header = document.querySelector("header");
+		const section = document.querySelector("section");
 
 		/* STEP 3: Store the URL of a JSON file in a variable */
+		const requestUrl = "https://jeel105512.github.io/json-lesson-01/js/i-scream.json";
 
 		/* STEP 4: Create a new XHR object */
+		const request = new XMLHttpRequest();
 
 		/* STEP 5: Open a new request using the open() method */
+		request.open("GET", requestUrl);
 
 		/* STEP 6: Set JavaScript to accept JSON from the server */
+		request.responseType = 'json';
 
 		/* STEP 7: Send the request with the send() method */
+		request.send();
 
 		/* STEP 8: Add an event handler that listens for the onload event of the JSON file/object */
+		request.addEventListener("load", () => {
+			const iScreamInc = request.response;
+			console.log(iScreamInc);
+			populateHeader(iScreamInc);
+			topFlavours(iScreamInc);
+		});
 
 		/* STEP 9: Build out the populateHeader() function */
+		function populateHeader(jsonObj){
+			const headerH1 = document.createElement("h1");
+			headerH1.textContent = jsonObj.companyName;
+			header.appendChild(headerH1);
+
+			const headerPara = document.createElement("p");
+			headerPara.textContent = `Head Office ${jsonObj.headOffice} Established: ${jsonObj.established}`;
+			header.appendChild(headerPara);
+		}
 
 		/* STEP 10a: Assemble the showTopFlavors() function */
-
+		function topFlavours(jsonObj){
+			
+		}
 			// STEP 10b: Bind the JSON topFlavors object to a var
 
 			// STEP 10c: Loop through the topFlavors object
