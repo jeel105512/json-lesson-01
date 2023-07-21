@@ -36,6 +36,28 @@
         "candy sprinkles"
       ],
       "image": "strawberry-sprinkle.svg"
+    },
+    {
+      "name": "Stupendous Strawberry",
+      "calories": 425,
+      "type": "frozen yogurt",
+      "ingredients": [
+        "wild strawberries",
+        "milk chocolate dip",
+        "candy sprinkles"
+      ],
+      "image": "ice-cream-xtra1.svg"
+    },
+    {
+      "name": "Stupendous Strawberry",
+      "calories": 425,
+      "type": "frozen yogurt",
+      "ingredients": [
+        "wild strawberries",
+        "milk chocolate dip",
+        "candy sprinkles"
+      ],
+      "image": "ice-cream-xtra1.svg"
     }
   ]
 }
