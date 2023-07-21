@@ -38,24 +38,24 @@
       "image": "strawberry-sprinkle.svg"
     },
     {
-      "name": "Stupendous Strawberry",
-      "calories": 425,
-      "type": "frozen yogurt",
+      "name": "Grape Fruit Green",
+      "calories": 325,
+      "type": "frozen fruit cream pulp",
       "ingredients": [
-        "wild strawberries",
-        "milk chocolate dip",
+        "wild grapes",
+        "vanilla cream dip",
         "candy sprinkles"
       ],
       "image": "ice-cream-xtra1.svg"
     },
     {
-      "name": "Stupendous Strawberry",
-      "calories": 425,
-      "type": "frozen yogurt",
+      "name": "Mava Kulphi",
+      "calories": 400,
+      "type": "unique",
       "ingredients": [
-        "wild strawberries",
-        "milk chocolate dip",
-        "candy sprinkles"
+        "fry fruits and caremal",
+        "vanilla cream dip",
+        "chocolate sprinkles"
       ],
       "image": "ice-cream-xtra2.svg"
     }
